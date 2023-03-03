@@ -1,22 +1,24 @@
 <p style="color: green"><%= notice %></p>
+
 <div class="p-3 mb-2 bg-black text-white">
 
 
-<div style="background-image:url('garage-automobile-920x425.jpg')"></div>
-<br>
-<h1 class="text-center" style="font-size: 70px; opacity:100%">Le Garage étrange</h1>
+<div class="intro" style="background-image:url('https://www.quelchoix.fr/wp-content/uploads/sites/59/2020/06/garage-automobile-920x425.jpg'); background-repeat:no-repeat; background-size:cover">
+
+
+<h1 class="text-center">Le Garage étrange</h1>
 
 <br>
 
-<h2 class="text-center" style="opacity:100%">
+<h2 class="text-center">
   !!! Bienvenue Au Garage !!!
 </h2>
 
-
-
-<h2 class="text-center" style="opacity:100%">
+<h2 class="text-center">
   Vous venez d'atterrir dans le garage de deux designers complètement fous aux idées aussi farfelus les une que les autres. Admirer nos superbes réalisations, qui peut être un jour, pourrais bien exister dans notre réalité.
 </h2>
+</div>
+
 
 <br>
 <br>
@@ -26,7 +28,8 @@
 
 
 
-<div class="row justify-content-center">
+
+<div class="row justify-content-center" >
   <div class="col-7">
     <div id="articles">
     <% @articles.each do |article| %>
@@ -38,7 +41,7 @@
     </div>
   </div>
 </div>
-
+</div>
 
 <button type="button" class="btn btn-warning"><%= link_to "New article", new_article_path %></button>
 
