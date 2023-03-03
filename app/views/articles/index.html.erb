@@ -20,16 +20,24 @@ background-repeat: no-repeat;}
 </div>
 <h1 class="text-center" style="font-size: 50px;">Articles</h1>
 
-<div id="articles">
-  <% @articles.each do |article| %>
+<div class="row justify-content-center">
+  <div class="col-7">
+    <div id="articles">
+    <% @articles.each do |article| %>
     <%= render article %>
     <p>
       <%= link_to "Show this article", article %>
     </p>
-  <% end %>
+    <% end %>
+    </div>
+  </div>
 </div>
+<<<<<<< HEAD
 
 
 <button type="button" class="btn btn-warning"><%= link_to "New article", new_article_path %></button>
 
 
+=======
+<%= link_to "New article", new_article_path %>
+>>>>>>> e08301a83c9ebe3e7fc63c68b204237c5c6a4a69

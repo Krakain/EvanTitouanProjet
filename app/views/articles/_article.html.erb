@@ -2,9 +2,8 @@
 
 <div class="p-3 mb-2 bg-black text-white">
 <div id="<%= dom_id article %>">
-
  
-  <p>
+ <p>
     <strong>Titre:</strong>
     <%= article.titre %>
   </p>
@@ -19,9 +18,12 @@
     <%= article.texte %>
   </p>
 
-  <p>
-  <strong>Image:</strong></p>
-  <img  src=" <%= article.image %>" style="width: 300px; height: 300px;">
-  
+  <div class="row justify-content-center">
+    <div class="col-7">
+      <p><strong>Image:</strong></p>
+      <img  src=" <%= article.image %>" style="width: 500px; height: 500px;">
+    </div>
+  </div>
+
 </div>
 </div>
